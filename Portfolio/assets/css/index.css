@@ -1,0 +1,310 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  background-image: url(../image/bg.png);
+}
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  border-top: 2px solid rgba(128, 128, 128, 0.352);
+  border-bottom: 2px solid rgba(128, 128, 128, 0.352);
+  z-index: 1;
+}
+.headertext {
+  display: flex;
+  width: 17%;
+  justify-content: center;
+  align-items: center;
+  font: bold 25px sans-serif;
+  background-color: var(--maincolor);
+  color: white;
+  padding: 30px 0;
+}
+.headertext:hover {
+  cursor: pointer;
+}
+.conainerlink {
+  display: flex;
+  gap: 20px;
+}
+.conainerlink a {
+  color: grey;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: color 1s;
+}
+.conainerlink div:not(:last-child)::after {
+  content: "|";
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 20px;
+}
+.conainerlink a:hover {
+  color: var(--maincolor);
+}
+main {
+  width: 100%;
+}
+.containerformain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 120px 0 100px 0;
+  gap: 50px;
+}
+
+.containerprojects {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.maintext {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.maintext p {
+  width: 93%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--maincolor);
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.266);
+}
+.projects {
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  column-gap: 20px;
+}
+
+.projects div {
+  width: calc(50% - 30px);
+  height: 30%;
+  position: relative;
+}
+.projects div img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: rgb(46, 70, 97) 10px 20px 30px -10px;
+}
+.projects div p {
+  background-color: var(--maincolor);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+  padding: 10px 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  top: 160px;
+  transition: all 1s;
+  box-shadow: 30px 5px 20px 5px rgb(255, 0, 162) inset,
+    -30px -5px 20px 5px rgb(255, 0, 162) inset;
+}
+.projects div p:hover {
+  background-color: rgb(255, 0, 162);
+  cursor: pointer;
+  box-shadow: 20px 20px 30px 7px rgb(255, 0, 162) inset,
+    -20px -20px 30px 7px rgb(255, 0, 162) inset,
+    5px 5px 30px 5px rgb(137, 72, 167), -5px -5px 30px 5px rgb(121, 72, 167);
+  transform: scale(1.02);
+  border-radius: 15px;
+}
+img:hover {
+  cursor: pointer;
+}
+.containercontactme {
+  width: 20%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.containercontactme div {
+  width: 90%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.285);
+  color: var(--maincolor);
+  font-size: 30px;
+  padding: 20px 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+.containercontactme ul {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  gap: 20px;
+}
+.containercontactme ul a {
+  width: 25%;
+
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+}
+.containercontactme ul a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 7px 14px 28px,
+    rgba(0, 0, 0, 0.22) 7px 10px 10px;
+}
+.containercontactme ul a:hover {
+  transform: scale(1.05);
+}
+footer {
+  width: 100%;
+}
+.footer {
+  background-color: #666666;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.containeraboutme {
+  width: 45%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.aboutmetext {
+  width: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.471);
+  font-size: 30px;
+  padding: 20px 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: var(--maincolor);
+}
+.aboutmemaintext {
+  width: 90%;
+  padding: 10px 0;
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+.aboutmemaintext img {
+  width: 40%;
+  padding-top: 10px;
+  object-fit: contain;
+}
+.aboutmemaintext p {
+  color: grey;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 40px;
+  text-align: justify;
+}
+.containeraboutme > p {
+  width: 90%;
+  color: grey;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 40px;
+}
+.form {
+  background-color: white;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+.form ul li label {
+  margin-bottom: 10px;
+  color: var(--maincolor);
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: all 1s;
+}
+.form ul li label:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  padding-left: 5px;
+}
+.form ul li input,
+.form ul li textarea,
+button {
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #d9d9d9af;
+  border: 2px solid gray;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.form ul li input:hover,
+.form ul li textarea:hover {
+  box-shadow: none;
+}
+.form ul li textarea {
+  height: 150px;
+}
+.form button {
+  width: 30%;
+  padding: 15px 0;
+  color: white;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--maincolor);
+  box-shadow: 30px 5px 20px 5px rgb(255, 0, 162) inset,
+    -30px -5px 20px 5px rgb(255, 0, 162) inset;
+  margin: 20px auto;
+  transition: all 1s;
+}
+.form button:hover {
+  background-color: rgb(255, 0, 162);
+  cursor: pointer;
+  box-shadow: 20px 20px 30px 7px rgb(255, 0, 162) inset,
+    -20px -20px 30px 7px rgb(255, 0, 162) inset;
+  transform: scale(0.97);
+  border-radius: 15px;
+}

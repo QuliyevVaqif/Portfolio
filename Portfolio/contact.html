@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/image/icon/download.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="headertext"><p>Quliyev Vaqif</p></div>
+      <div class="conainerlink">
+        <div>
+          <a href="./about.html">About</a>
+        </div>
+        <div>
+          <a href="./index.html">Portfolio</a>
+        </div>
+        <div>
+          <a href="./contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="containerformain">
+        <div class="containerprojects">
+          <div class="maintext"><p>Contact</p></div>
+
+          <form class="form">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="John Smith"
+                  required
+                />
+              </li>
+              <li>
+                <label for="email">Email:</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="email@gmail.com"
+                  required
+                />
+              </li>
+              <li>
+                <label for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  maxlength="200"
+                  required
+                ></textarea>
+              </li>
+            </ul>
+            <button type="button">Submit</button>
+          </form>
+        </div>
+
+        <div class="containercontactme">
+          <div class="contactmetext"><p>Contact With Me</p></div>
+          <ul>
+            <a href="https://github.com/QuliyevVaqif/FrontendProjects"
+              ><img src="assets/image/github.png" alt="Github" /></a
+            ><a href="https://az.linkedin.com/"
+              ><img src="assets/image/linkedin.png" alt="linkedin" /></a
+            ><a href="https://stackoverflow.com/questions"
+              ><img src="assets/image/stack.png" alt="stack overflow"
+            /></a>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div
+        style="width: 100%; height: 10px; background-color: var(--maincolor)"
+      ></div>
+      <div class="footer"><p>Copyright © 2025 Vaqif Quliyev</p></div>
+    </footer>
+  </body>
+</html>
